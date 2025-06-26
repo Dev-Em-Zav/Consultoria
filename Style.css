@@ -1,0 +1,187 @@
+/* Variables globales */
+:root {
+    --color-amarillo: #F4C430;
+    --color-amarillo-hover: #e0b020;
+    --color-negro: #111111;
+    --color-gris-oscuro: #2C2C2C;
+    --color-gris-medio: #1C1C1C;
+    --color-gris-claro: #CCCCCC;
+    --color-blanco: #FFFFFF;
+    --color-texto-secundario: #AAAAAA;
+}
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--color-gris-oscuro);
+    color: var(--color-blanco);
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: var(--color-negro);
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    color: var(--color-amarillo);
+    font-size: 28px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: var(--color-blanco);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--color-amarillo);
+}
+
+/* Hero / Inicio */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: var(--color-gris-medio);
+}
+
+.hero h2 {
+    font-size: 36px;
+    color: var(--color-amarillo);
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.boton {
+    background-color: var(--color-amarillo);
+    color: var(--color-negro);
+    padding: 12px 24px;
+    border: none;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.boton:hover {
+    background-color: var(--color-amarillo-hover);
+}
+
+/* Secciones */
+section {
+    padding: 60px 40px;
+}
+
+h2 {
+    color: var(--color-amarillo);
+    font-size: 28px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Servicios */
+.servicio {
+    background-color: var(--color-gris-medio);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-left: 5px solid var(--color-amarillo);
+}
+
+.servicio h3 {
+    color: var(--color-blanco);
+    margin-bottom: 10px;
+}
+
+/* Nosotros, testimonios */
+#nosotros p, #testimonios blockquote {
+    max-width: 800px;
+    margin: 0 auto 20px;
+    text-align: center;
+}
+
+blockquote {
+    font-style: italic;
+    border-left: 5px solid var(--color-amarillo);
+    padding-left: 15px;
+    color: var(--color-gris-claro);
+}
+
+cite {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: var(--color-amarillo);
+}
+
+/* Formulario de contacto */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: var(--color-gris-medio);
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid #444;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: var(--color-amarillo);
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: var(--color-gris-oscuro);
+    border: 1px solid var(--color-gris-claro);
+    color: var(--color-blanco);
+    border-radius: 4px;
+}
+
+button {
+    background-color: var(--color-amarillo);
+    color: var(--color-negro);
+    padding: 10px 20px;
+    border: none;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--color-amarillo-hover);
+}
+
+/* Footer */
+footer {
+    background-color: var(--color-negro);
+    color: var(--color-texto-secundario);
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
